@@ -14,57 +14,38 @@
 </head>
 
 <body>
-	<header>
-		<nav>
-			<a>
-				<img src="icon-voltar.svg" alt="icone de voltar" />
-			</a>
-			<a>
-				<h5>Calculadora ProWayBank</h5>
-			</a>
-		</nav>
-		<section class="container" id="bemvindo">
-			<img class="rounded-circle" src="fotoPerfil.png" width="65" height="60">
-			<div>
-				<span>Bem-vindo de volta</span>
-				<h5>Evert</h5>
-				<p>Saldo:</p>
-			</div>
-		</section>
-	</header>
-
 	<main>
 		<section class="content-box">
 			<artcile>
 				<table class="table table-dark table-hover">
 					<p id="resultado"></p>
 					<tr>
-						<td><button id="botao" onclick="clean()" class="btn btn-warning">C</button></td>
-						<td><button id="botao" onclick="back()" class="btn btn-warning"><</button></td>
-						<td><button id="botao" onclick="insert('/')" class="btn btn-warning">/</button></td>
-						<td><button id="botao" onclick="insert('x')" class="btn btn-warning">X</button></td>
+						<td><button id="botao" onclick="calculadora.clean()" class="btn btn-warning">C</button></td>
+						<td><button id="botao" onclick="calculadora.back()" class="btn btn-warning"><</button></td>
+						<td><button id="botao" onclick="calculadora.insert('/')" class="btn btn-warning">/</button></td>
+						<td><button id="botao" onclick="calculadora.insert('*')" class="btn btn-warning">X</button></td>
 					</tr>
 					<tr>
-						<td><button id="botao" onclick="insert('7')" class="btn btn-warning">7</button></td>
-						<td><button id="botao" onclick="insert('8')" class="btn btn-warning">8</button></td>
-						<td><button id="botao" onclick="insert('9')" class="btn btn-warning">9</button></td>
-						<td><button id="botao" onclick="insert('-')" class="btn btn-warning">-</button></td>
+						<td><button id="botao" onclick="calculadora.insert('7')" class="btn btn-warning">7</button></td>
+						<td><button id="botao" onclick="calculadora.insert('8')" class="btn btn-warning">8</button></td>
+						<td><button id="botao" onclick="calculadora.insert('9')" class="btn btn-warning">9</button></td>
+						<td><button id="botao" onclick="calculadora.insert('-')" class="btn btn-warning">-</button></td>
 					</tr>
 					<tr>
-						<td><button id="botao" onclick="insert('4')" class="btn btn-warning">4</button></td>
-						<td><button id="botao" onclick="insert('5')" class="btn btn-warning">5</button></td>
-						<td><button id="botao" onclick="insert('6')" class="btn btn-warning">6</button></td>
-						<td><button id="botao" onclick="insert('+')" class="btn btn-warning">+</button></td>
+						<td><button id="botao" onclick="calculadora.insert('4')" class="btn btn-warning">4</button></td>
+						<td><button id="botao" onclick="calculadora.insert('5')" class="btn btn-warning">5</button></td>
+						<td><button id="botao" onclick="calculadora.insert('6')" class="btn btn-warning">6</button></td>
+						<td><button id="botao" onclick="calculadora.insert('+')" class="btn btn-warning">+</button></td>
 					</tr>
 					<tr>
-						<td><button id="botao" onclick="insert('1')" class="btn btn-warning">1</button></td>
-						<td><button id="botao" onclick="insert('2')" class="btn btn-warning">2</button></td>
-						<td><button id="botao" onclick="insert('3')" class="btn btn-warning">3</button></td>
-						<td rowspan="2"><button id="botao" onclick="calcular()" class="btn btn-warning" style="height: 106px;">=</button></td>
+						<td><button id="botao" onclick="calculadora.insert('1')" class="btn btn-warning">1</button></td>
+						<td><button id="botao" onclick="calculadora.insert('2')" class="btn btn-warning">2</button></td>
+						<td><button id="botao" onclick="calculadora.insert('3')" class="btn btn-warning">3</button></td>
+						<td rowspan="2"><button id="botao" onclick="calculadora.calcular()" class="btn btn-warning" style="height: 106px;">=</button></td>
 					</tr>
 					<tr>
-						<td colspan="2"><button id="botao" onclick="insert('0')" class="btn btn-warning" style="width: 180px;">0</button></td>
-						<td><button id="botao"  onclick="insert('.')" class="btn btn-warning">.</button></td>
+						<td colspan="2"><button id="botao" onclick="calculadora.insert('0')" class="btn btn-warning" style="width: 180px;">0</button></td>
+						<td><button id="botao"  onclick="calculadora.insert('.')" class="btn btn-warning">.</button></td>
 					</tr>
 				</table>
 			</artcile>
